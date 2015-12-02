@@ -2,6 +2,7 @@ $(document).ready(function() {
 var search;
   $('#submit').click(function() {
     search = $('#search_term').val();
+    //  $('tr').remove;
     search1 = $('#exclude').val();
 
   var getter = $.ajax ({
@@ -16,10 +17,8 @@ var search;
         var stuff = returned['data']['children'][i]
         var inside = stuff['data']['title'];
         var insider = stuff['data']['url'];
-        //var insidest = stuff['data']['link']
-          $('#tabl').append('<tr><td>'+inside+'</td></tr>');
-          $('#tabl').append('<tr><td>'+insider+'</td></tr>');
-          //$('#tabl').append('<tr><td>'+insidest+'</td></tr>')
+          $('.tabletitle').append('<tr><td>'+inside+'</td></tr>');
+          $('.tableurl').append('<tr><td>'+insider+'</td></tr>');
       }
     })
   })
