@@ -1,0 +1,13 @@
+.background {
+  box-sizing: border-box;
+  background-color: rgb(206, 227, 248);
+  margin-left: 35vw
+}
+
+.reddit {
+  height: 30vh;
+  width: 20vw;
+}
+#tabl {
+  font-family: verdana;
+}
