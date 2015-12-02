@@ -11,12 +11,15 @@ var search;
   });
 
   getter.done(function(returned) {
-    var reject = "cannot display"
     for (var i = 0; i < returned['data']['children'].length; i++) {
-        var inside = returned['data']['children'][i]['data']['title'];
-        var insider = returned['data']['children'][i]['data']['url'];
+      for (var obj in returned)
+        var stuff = returned['data']['children'][i]
+        var inside = stuff['data']['title'];
+        var insider = stuff['data']['url'];
+        //var insidest = stuff['data']['link']
           $('#tabl').append('<tr><td>'+inside+'</td></tr>');
           $('#tabl').append('<tr><td>'+insider+'</td></tr>');
+          //$('#tabl').append('<tr><td>'+insidest+'</td></tr>')
       }
     })
   })

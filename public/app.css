@@ -10,4 +10,8 @@
 }
 #tabl {
   font-family: verdana;
+  border: 10px inset #d82624;
+}
+td {
+  border-bottom: 7px ridge #d82624;
 }
